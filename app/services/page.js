@@ -1,9 +1,19 @@
+import { cookies } from "next/headers";
 import Link from "next/link";
 
-export default function page() {
+// export const dynamic = "auto";
+// export const dynamic = "force-dynamic";
+// export const dynamic = "error";
+// export const dynamic = "force-static";
+
+export default async function ServicePage({ searchParams }) {
+  // const search = await searchParams;
+  // console.log(search);
+  const myCookies = await cookies();
+  console.log(myCookies);
   return (
     <div>
-      <h1>Welcome to Next.js App</h1>
+      Service Page
       <nav>
         <ul>
           <li>

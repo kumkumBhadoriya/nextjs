@@ -1,10 +1,9 @@
+import React from "react";
 import Link from "next/link";
 
-export default function page() {
-  return (
-    <div>
-      <h1>Welcome to Next.js App</h1>
-      <nav>
+export default function AboutPage() {
+  return <div>About Page
+    <nav>
         <ul>
           <li>
             <Link href="/">Home</Link>
@@ -20,6 +19,5 @@ export default function page() {
           </li>
         </ul>
       </nav>
-    </div>
-  );
+  </div>;
 }
